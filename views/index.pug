@@ -1,0 +1,33 @@
+extends layout
+
+block content
+  h1= title
+  ul.inputs
+    li
+      ul.row.header
+        li Nombre del Grupo
+        li Invitados
+        li Texto Invitacion
+        li e-mail        
+        li añadir
+    li
+      ul.row.body
+        form(action="/rsvp" method="post")
+          li Familia Bahamon Rodriguez
+          li 
+            ul.guests
+              li  
+                input(type="text")
+                button add
+                button remove
+              li
+                input(type="text")
+                button add
+                button remove   
+              li
+                button save
+                button edit        
+          li Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ab rem nam fuga ullam porro cum consectetur. Suscipit nihil odit reiciendis nemo, praesentium placeat, minima minus ratione laudantium beatae labore.
+          li pollito@lala.com         
+          li
+            button.add añadir

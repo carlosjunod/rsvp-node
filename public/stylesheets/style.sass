@@ -1,0 +1,41 @@
+body
+  padding: 50px
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
+
+.inputs
+  list-style: none
+  margin: 0px
+  padding: 0px
+
+  .row
+    width: 100%
+    display: flex
+    list-style: none  
+    align-items: stretch
+    justify-content: space-around
+    margin: 0px
+    padding: 0px
+
+    >li, form>li
+      padding: 10px
+      margin-left: 10px
+    
+
+    &.header
+      background-color: gray
+      font-weight: bolder
+    
+    &.body
+      background-color: silver
+
+      form
+        width: 100%
+        display: flex
+    li
+      width: calc(100% / 4 - 10px)
+    
+      .guests
+        margin: 0px
+        padding: 0px
+        list-style: none
+

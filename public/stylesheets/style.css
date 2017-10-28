@@ -1,0 +1,35 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+.inputs {
+  list-style: none;
+  margin: 0px;
+  padding: 0px; }
+  .inputs .row {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    align-items: stretch;
+    justify-content: space-around;
+    margin: 0px;
+    padding: 0px; }
+    .inputs .row > li, .inputs .row form > li {
+      padding: 10px;
+      margin-left: 10px; }
+    .inputs .row.header {
+      background-color: gray;
+      font-weight: bolder; }
+    .inputs .row.body {
+      background-color: silver; }
+      .inputs .row.body form {
+        width: 100%;
+        display: flex; }
+    .inputs .row li {
+      width: calc(100% / 4 - 10px); }
+      .inputs .row li .guests {
+        margin: 0px;
+        padding: 0px;
+        list-style: none; }
+
+/*# sourceMappingURL=style.css.map */
