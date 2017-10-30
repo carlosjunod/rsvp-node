@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var randomstring = require("randomstring");
 
 const GuestGroupList = require('../models/Guest')
 
@@ -14,7 +15,11 @@ router.get('/rsvp', function(req, res, next) {
 });
 
 router.post('/add', (req,res,next)=>{
-  var newGroup = new GuestGroupList({ ...req.body })
+
+  let obj = req.body
+  obj.code = randomstring.generate(7)
+  
+  var newGroup = new GuestGroupList({ ...obj })
 
   newGroup.save(function (err, group) {
     if (err) return console.error(err)
@@ -22,8 +27,6 @@ router.post('/add', (req,res,next)=>{
   })
 
   res.sendStatus(200)
-
-
 })
 
 module.exports = router;

@@ -19,9 +19,11 @@ body {
       margin-left: 10px; }
     .inputs .row.header {
       background-color: gray;
-      font-weight: bolder; }
+      font-weight: bolder;
+      padding: 10px 0px; }
     .inputs .row.body {
-      background-color: silver; }
+      background-color: silver;
+      border-bottom: 1px solid gray; }
       .inputs .row.body form {
         width: 100%;
         display: flex; }
