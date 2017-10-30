@@ -31,5 +31,24 @@ body {
         margin: 0px;
         padding: 0px;
         list-style: none; }
+      .inputs .row li.small {
+        width: 8%; }
+  .inputs ul.group {
+    width: 100%;
+    list-style: none;
+    padding: 0px;
+    margin: 0px; }
+  .inputs .persons {
+    list-style: none;
+    padding: 0px;
+    margin: 0px; }
+    .inputs .persons li {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      width: 100%; }
+      .inputs .persons li .name {
+        width: 90%; }
 
 /*# sourceMappingURL=style.css.map */

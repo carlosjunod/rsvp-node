@@ -28,13 +28,36 @@ block content
           li
             input#btnsubmit(type="submit", value="Añadir")
   h2 Groups
-  ul
-    each group in groups
-      li= group.groupName
-      li= group.size
-      li
-        ul
-         each person in group.list
-          li= person.guesName
+  ul.inputs
+    li
+      ul.row.header
+        li Nombre del Grupo
+        li.small N Invitados
+        li e-mail        
+        li Invitados
+        li.small enviar email
+        li.small editar
+        li.small eliminar
+        
+    li              
+      each group in groups
+        ul.row.body 
+          li= group.groupName
+          li.small= group.size
+          li= group.email
+          li
+            ul.persons
+              each person in group.list
+                li
+                  div.name= person.guesName
+                  div                
+                    input(type="checkbox", name="assist", checked=(person.attend ? "checked" : undefined) disabled="disabled")
+          li.small
+            button#send-email Enviar
+          li.small
+            button#edit Editar
+          li.small
+            button#eliminar Eliminar
+
       
       

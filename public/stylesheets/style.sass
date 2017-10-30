@@ -33,9 +33,34 @@ body
         display: flex
     li
       width: calc(100% / 4 - 10px)
-    
+
       #guests
         margin: 0px
         padding: 0px
         list-style: none
+
+      &.small
+        width: 8%
+
+  
+  ul.group
+    width: 100%
+    list-style: none
+    padding: 0px
+    margin: 0px  
+  
+  .persons
+    list-style: none
+    padding: 0px
+    margin: 0px
+
+    li
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      flex-direction: row-reverse
+      width: 100%
+
+      .name
+        width: 90%
 
