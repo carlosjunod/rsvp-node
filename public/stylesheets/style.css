@@ -27,7 +27,7 @@ body {
         display: flex; }
     .inputs .row li {
       width: calc(100% / 4 - 10px); }
-      .inputs .row li .guests {
+      .inputs .row li #guests {
         margin: 0px;
         padding: 0px;
         list-style: none; }

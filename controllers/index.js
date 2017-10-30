@@ -5,18 +5,24 @@ const GuestGroupList = require('../models/Guest')
 
 /* GET home page. */
 router.get('/rsvp', function(req, res, next) {
-
-
-  res.render('index', { title: 'Enviar Invitacion' });
   
-
+  GuestGroupList.find((err, groups)=>{
+    if (err) res.render('index', { title: 'Añadir a la lista' });
+  
+    res.render('index', { title: 'Añadir a la lista', groups})
+  })
 });
 
-router.post('/rsvp/:group', (req,res,next)=>{
-  var newGroup = new GuestGroupList({ name: 'my Group :D' })
-  newGroup.save(function (err, fluffy) {
+router.post('/add', (req,res,next)=>{
+  var newGroup = new GuestGroupList({ ...req.body })
+
+  newGroup.save(function (err, group) {
     if (err) return console.error(err)
+    console.log('group', group)
   })
+
+  res.sendStatus(200)
+
 
 })
 

@@ -9,25 +9,32 @@ block content
         li Invitados
         li Texto Invitacion
         li e-mail        
-        li añadir
+        li añadir a la lista
     li
       ul.row.body
-        form(action="/rsvp" method="post")
-          li Familia Bahamon Rodriguez
+        form#form(action="/rsvp" method="post" name="form")
           li 
-            ul.guests
-              li  
-                input(type="text")
-                button add
-                button remove
+            input(type="text", name="groupName")
+          li 
+            ul#guests
+              button#addnew add new guest     
               li
-                input(type="text")
-                button add
-                button remove   
-              li
-                button save
-                button edit        
-          li Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ab rem nam fuga ullam porro cum consectetur. Suscipit nihil odit reiciendis nemo, praesentium placeat, minima minus ratione laudantium beatae labore.
-          li pollito@lala.com         
+                input(type="text" placeholder="Nombre Invitado")
+                button#removeGuest remove
+          li 
+            textarea(name="message", cols="30", rows="10")
           li
-            button.add añadir
+            input(type="email", name="email")        
+          li
+            input#btnsubmit(type="submit", value="Añadir")
+  h2 Groups
+  ul
+    each group in groups
+      li= group.groupName
+      li= group.size
+      li
+        ul
+         each person in group.list
+          li= person.guesName
+      
+      
