@@ -1,6 +1,8 @@
 var addInvitedButton = document.getElementById('addnew')
 var delFirstGuest = document.querySelector('#removeGuest')
 var form = document.querySelector('#form')
+var sendBtn = document.querySelectorAll('.send-email')
+var delBtn = document.querySelectorAll('.eliminar')
 
 delFirstGuest.addEventListener('click', (e)=>{
   e.preventDefault()
@@ -14,7 +16,7 @@ addInvitedButton.addEventListener('click', (e) =>{
   insert.appendChild(createNewGuestElement(), insert.firstChild)
 })
 
-
+// creating new fields
 function createNewGuestElement(){
   // new field
   let newLi = document.createElement("li")
@@ -75,6 +77,61 @@ submitBtn.addEventListener('click', (e)=>{
   }).catch(err => {
     console.log('err', err)
   })
-
-
 })
+
+
+// targeting send buttons
+sendBtn.forEach(btn=>{
+  btn.addEventListener('click', (e) => {
+    e.preventDefault()
+    let row = e.target.closest('.row')
+    let id = row.querySelector('.hidden').value
+    sendEmail(id)
+  })
+})
+
+function sendEmail(id){
+  fetch('/send', {
+    method: 'post',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({id})
+  }).then(response => {
+    // console.log('response', response)
+    window.location.reload()      
+  }).catch(err => {
+    console.log('err', err)
+  })
+}
+
+// deleting 
+// targeting delete buttons
+delBtn.forEach(btn=>{
+  btn.addEventListener('click', (e) => {
+    e.preventDefault()
+    let row = e.target.closest('.row')
+    let id = row.querySelector('.hidden').value
+
+    console.log('row', row)
+    console.log('id---->', id)
+    delGroup(id)
+  })
+})
+
+function delGroup(id){ 
+  fetch('/rsvp', {
+    method: 'delete',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({id})
+  }).then(response => {
+    console.log('response', response)
+    window.location.reload()    
+  }).catch(err => {
+    console.error('err', err)
+  })
+}

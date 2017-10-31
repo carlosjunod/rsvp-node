@@ -32,7 +32,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use('/', index);
-// app.use('/users', users);
+
+var NODE_ENV = process.env.NODE_ENV || 'development';
+
+if (NODE_ENV === 'development') {
+  require('dotenv').load();
+}
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -39,25 +39,29 @@ block content
         li.small editar
         li.small eliminar
         
-    li              
-      each group in groups
-        ul.row.body 
-          li= group.groupName
-          li.small= group.size
-          li= group.email
-          li
-            ul.persons
-              each person in group.list
-                li
-                  div.name= person.guesName
-                  div                
-                    input(type="checkbox", name="assist", checked=(person.attend ? "checked" : undefined) disabled="disabled")
-          li.small
-            button#send-email Enviar
-          li.small
-            button#edit Editar
-          li.small
-            button#eliminar Eliminar
-
+    li     
+      if (groups.length !== 0)
+        each group in groups
+          ul.row.body
+            input(type="text", name="_id", value=group._id).hidden
+            li #{group.groupName} ( #{group.code} )
+            li.small= group.size
+            li= group.email
+            li
+              ul.persons
+                each person in group.list
+                  li
+                    div.name= person.guesName
+                    div                
+                      input(type="checkbox", name="assist", checked=(person.attend ? "checked" : undefined) disabled="disabled")
+            li.small
+              button.send-email Enviar
+            li.small
+              button#edit Editar
+            li.small
+              button.eliminar Eliminar
+      else        
+        ul.row.body
+          li No hay grupos todavia
       
       
