@@ -17,10 +17,11 @@ router.get('/rsvp', function(req, res, next) {
 
 router.post('/add', (req,res,next)=>{
 
-  let obj = req.body
+  let obj = {...req.body}
   obj.code = randomstring.generate(7)
   
-  var newGroup = new GuestGroupList({ ...obj })
+  console.log('obj', obj)
+  var newGroup = new GuestGroupList(obj)
 
   newGroup.save((err, group)=>{
     if (err) return console.error(err)
