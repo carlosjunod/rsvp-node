@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= group.groupName
+   ul.persons
+    each person in group.list
+      li
+        div.name= person.guesName
+        div                
+          input(type="checkbox", name="assist", checked=(person.attend ? "checked" : undefined))
+  
+
+      
+      

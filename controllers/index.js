@@ -22,7 +22,7 @@ router.post('/add', (req,res,next)=>{
   
   var newGroup = new GuestGroupList({ ...obj })
 
-  newGroup.save((err, group) => {
+  newGroup.save((err, group)=>{
     if (err) return console.error(err)
   })
 
@@ -39,8 +39,21 @@ router.delete('/rsvp', (req,res,next)=>{
   
 })
 
+// confirmation API
+router.post('/confirm/:id', (req, res, next)=>{
+  console.log('req.params.id', req.params.id)
+  const code = req.params.id
 
-router.post('/send', (req, res, next) => {
+  GuestGroupList.findOne({code}, (err, group)=>{
+    console.log('group', group)
+    res.json(group);
+
+    // res.render('confirm', { group: group})
+    
+  })
+})
+
+router.post('/send', (req, res, next)=>{
   
   let id = req.body.id
 
