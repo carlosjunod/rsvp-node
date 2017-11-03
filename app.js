@@ -5,6 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var sassMiddleware = require('node-sass-middleware');
+var cors = require('cors')
 
 var index = require('./controllers/index');
 // var users = require('./routes/users');
@@ -27,6 +28,7 @@ app.use(sassMiddleware({
   indentedSyntax: true, // true = .sass and false = .scss
   sourceMap: true
 }));
+app.use(cors())
 console.log('HERE!!!!!')
 app.use(express.static(path.join(__dirname, 'public')));
 
