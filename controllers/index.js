@@ -5,6 +5,7 @@ const nodemailer = require('nodemailer')
 
 const GuestGroupList = require('../models/Guest')
 
+
 /* GET home page. */
 router.get('/rsvp', function(req, res, next) {
   
@@ -41,16 +42,13 @@ router.delete('/rsvp', (req,res,next)=>{
 })
 
 // confirmation API
-router.post('/confirm/:id', (req, res, next)=>{
+router.get('/confirm/:id', (req, res, next)=>{
   console.log('req.params.id', req.params.id)
   const code = req.params.id
 
   GuestGroupList.findOne({code}, (err, group)=>{
     console.log('group', group)
-    res.json(group);
-
-    // res.render('confirm', { group: group})
-    
+    res.json(group);    
   })
 })
 
