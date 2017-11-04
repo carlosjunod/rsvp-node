@@ -10,8 +10,7 @@ const GuestGroupList = require('../models/Guest')
 router.get('/rsvp', function(req, res, next) {
   
   GuestGroupList.find((err, groups)=>{
-    if (err) res.render('index', { title: 'Añadir a la lista' });
-  
+    if (err) res.render('index', { title: 'Añadir a la lista' });  
     res.render('index', { title: 'Añadir a la lista', groups})
   })
 });
@@ -21,7 +20,6 @@ router.delete('/rsvp', (req,res,next)=>{
   GuestGroupList.findOneAndRemove({_id: id}, (err, group)=>{
     if (err) return console.error(err)
   })
-
   res.sendStatus(200)
   
 })
@@ -32,7 +30,7 @@ router.post('/add', (req,res,next)=>{
   let obj = {...req.body}
   obj.code = randomstring.generate(7)
   
-  console.log('obj', obj)
+  // console.log('obj', obj)
   var newGroup = new GuestGroupList(obj)
 
   newGroup.save((err, group)=>{
@@ -45,19 +43,18 @@ router.post('/add', (req,res,next)=>{
 
 // confirmation API
 router.get('/confirm/:id', (req, res, next)=>{
-  console.log('req.params.id', req.params.id)
+  // console.log('req.params.id', req.params.id)
   const code = req.params.id
 
   GuestGroupList.findOne({code}, (err, group)=>{
-    console.log('group', group)
+    // console.log('group', group)
     res.json(group);    
   })
 })
 
 router.post('/save-rsvp', (res, req, next)=>{
-  console.log('😬 saving-rsvp')
+  console.log('😬 saving-rsvp req.body', req.body)
 
-  
 })
 
 router.post('/send', (req, res, next)=>{
