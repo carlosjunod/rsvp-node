@@ -16,6 +16,17 @@ router.get('/rsvp', function(req, res, next) {
   })
 });
 
+router.delete('/rsvp', (req,res,next)=>{
+  let id = req.body.id
+  GuestGroupList.findOneAndRemove({_id: id}, (err, group)=>{
+    if (err) return console.error(err)
+  })
+
+  res.sendStatus(200)
+  
+})
+
+
 router.post('/add', (req,res,next)=>{
 
   let obj = {...req.body}
@@ -31,15 +42,6 @@ router.post('/add', (req,res,next)=>{
   res.sendStatus(200)
 })
 
-router.delete('/rsvp', (req,res,next)=>{
-  let id = req.body.id
-  GuestGroupList.findOneAndRemove({_id: id}, (err, group)=>{
-    if (err) return console.error(err)
-  })
-
-  res.sendStatus(200)
-  
-})
 
 // confirmation API
 router.get('/confirm/:id', (req, res, next)=>{
@@ -50,6 +52,12 @@ router.get('/confirm/:id', (req, res, next)=>{
     console.log('group', group)
     res.json(group);    
   })
+})
+
+router.post('/save-rsvp/:id', (res, req, next)=>{
+  console.log('😬 saving-rsvp:', req.params.id)
+
+  
 })
 
 router.post('/send', (req, res, next)=>{
