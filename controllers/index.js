@@ -54,8 +54,8 @@ router.get('/confirm/:id', (req, res, next)=>{
   })
 })
 
-router.post('/save-rsvp/:id', (res, req, next)=>{
-  console.log('😬 saving-rsvp:', req.params.id)
+router.post('/save-rsvp', (res, req, next)=>{
+  console.log('😬 saving-rsvp')
 
   
 })
