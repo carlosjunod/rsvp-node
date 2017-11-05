@@ -2,6 +2,8 @@ const express = require('express');
 const router = express.Router();
 const randomstring = require("randomstring")
 const nodemailer = require('nodemailer')
+var cors = require('cors')
+
 
 const GuestGroupList = require('../models/Guest')
 
@@ -26,7 +28,7 @@ router.delete('/rsvp', (req,res,next)=>{
 
 
 router.post('/add', (req,res,next)=>{
-
+  console.log('req', req.body)
   let obj = {...req.body}
   obj.code = randomstring.generate(7)
   
@@ -52,9 +54,19 @@ router.get('/confirm/:id', (req, res, next)=>{
   })
 })
 
-router.post('/save-rsvp', (res, req, next)=>{
-  console.log('😬 saving-rsvp req.body', req.body)
+router.post('/save-rsvp', (req,res,next)=>{
+  const id = req.body.id
+  const list = req.body.confirmedList
 
+
+  GuestGroupList.findOneAndUpdate({_id: id}, {list}, (err, doc)=>{
+    err ? console.log('error', err) : console.log('doc', doc)
+    res.json(doc)
+  })
+
+  
+
+  // res.sendStatus(200)
 })
 
 router.post('/send', (req, res, next)=>{

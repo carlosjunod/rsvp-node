@@ -10,7 +10,8 @@ const GuestGroupSchema = mongoose.Schema({
   lang: String,
   email: String,
   message: String,
-  code: String
+  code: String,
+  sended: false
 })
 
 module.exports = mongoose.model('guestGroup', GuestGroupSchema);

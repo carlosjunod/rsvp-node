@@ -9,6 +9,8 @@ var cors = require('cors')
 
 var app = express();
 app.use(cors())
+app.options('/save-rsvp', cors())
+
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
