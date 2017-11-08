@@ -3,6 +3,7 @@ var delFirstGuest = document.querySelector('#removeGuest')
 var form = document.querySelector('#form')
 var sendBtn = document.querySelectorAll('.send-email')
 var delBtn = document.querySelectorAll('.eliminar')
+var editBtn = document.querySelectorAll('.edit-group')
 
 delFirstGuest.addEventListener('click', (e)=>{
   e.preventDefault()
@@ -90,7 +91,7 @@ sendBtn.forEach(btn=>{
   })
 })
 
-function sendEmail(id){
+const sendEmail = (id) => {
   fetch('/send', {
     method: 'post',
     headers: {
@@ -99,8 +100,10 @@ function sendEmail(id){
     },
     body: JSON.stringify({id})
   }).then(response => {
-    // console.log('response', response)
-    window.location.reload()      
+    console.log('response', response)
+    // window.location.reload()
+    console.log('HERE!!!!!!!!!!!')
+    displayMsg('Mensaje Enviado', 'success')      
   }).catch(err => {
     console.log('err', err)
   })
@@ -120,7 +123,7 @@ delBtn.forEach(btn=>{
   })
 })
 
-function delGroup(id){ 
+const delGroup = (id) => { 
   fetch('/rsvp', {
     method: 'delete',
     headers: {
@@ -135,3 +138,23 @@ function delGroup(id){
     console.error('err', err)
   })
 }
+
+const displayMsg = (msg, color) => {
+  console.log('MSG!!!')
+  $(this).alertMe({
+    message: msg,
+    type: color
+  })   
+}
+
+// targeting edit buttons
+editBtn.forEach(btn=>{
+  btn.addEventListener('click', (e) => {
+    e.preventDefault()
+    let row = e.target.closest('.row')
+    let id = row.querySelector('.hidden').value
+
+    window.location.href = `edit/${id}`
+  })
+})
+

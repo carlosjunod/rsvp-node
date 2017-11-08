@@ -11,7 +11,10 @@ const GuestGroupSchema = mongoose.Schema({
   email: String,
   message: String,
   code: String,
-  sended: false
+  tracking: {
+    sent: { type: Boolean, default: false },
+    count: { type: Number, default: 0 }
+  }
 })
 
 module.exports = mongoose.model('guestGroup', GuestGroupSchema);

@@ -63,11 +63,35 @@ router.post('/save-rsvp', (req,res,next)=>{
     err ? console.log('error', err) : console.log('doc', doc)
     res.json(doc)
   })
-
-  
-
   // res.sendStatus(200)
 })
+
+router.get('/edit/:id', (req,res,next)=>{
+  const id = req.params.id
+  const list = req.body.confirmedList
+
+
+  GuestGroupList.findOne({_id: id}, (err, group)=>{
+    err ? console.log('error', err) : console.log('group', group)
+    res.render('edit', { title: 'Edicion', group})
+    
+  })
+})
+
+router.put('/edit/:id', (req,res,next)=>{
+  const id = req.params.id
+  const group = req.body
+
+  console.log('group', group)
+  console.log('id', id)
+
+  GuestGroupList.findOneAndUpdate({_id: id}, {...group} ,(err, group)=>{
+    err ? console.log('error', err) : console.log('group', group)
+    res.render('edit', { title: 'Edicion', group})    
+  })
+})
+
+
 
 router.post('/send', (req, res, next)=>{
   
@@ -106,9 +130,20 @@ router.post('/send', (req, res, next)=>{
       if (err) {
         res.sendStatus(500)  
         return console.log('err', err)    
-        
+
       } else {
         console.log('email was sent')
+
+        group.tracking.count++   
+
+        let tracking = {
+          sent: true,
+          count: group.tracking.count
+        }    
+
+        GuestGroupList.update({_id: id}, { tracking }, (err, doc)=>{
+          err ? console.log('error', err) : console.log('doc', doc)        
+        })
         res.sendStatus(200)      
       }
     })

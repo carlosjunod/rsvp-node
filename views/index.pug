@@ -1,6 +1,7 @@
 extends layout
 
 block content
+  .alert-container
   h1= title
   ul.inputs
     li
@@ -34,7 +35,9 @@ block content
         li Nombre del Grupo
         li.small N Invitados
         li e-mail        
-        li Invitados
+        li.small Enviado
+        li # Envios              
+        li.small Invitados
         li.small enviar email
         li.small editar
         li.small eliminar
@@ -47,6 +50,9 @@ block content
             li #{group.groupName} ( #{group.code} )
             li.small= group.size
             li= group.email
+            li.small
+              input(type="checkbox", name="assist", checked=(group.tracking.sent ? "checked" : undefined) disabled="disabled")
+            li.small= group.tracking.count
             li
               ul.persons
                 each person in group.list
@@ -57,11 +63,11 @@ block content
             li.small
               button.send-email Enviar
             li.small
-              button#edit Editar
+              button.edit-group Editar
             li.small
               button.eliminar Eliminar
       else        
         ul.row.body
           li No hay grupos todavia
       
-      
+  script(src="/javascripts/requests.js")  

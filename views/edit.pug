@@ -1,0 +1,37 @@
+extends layout
+
+block content
+  .alert-container
+  h1= title
+  //- div= group
+  ul.inputs
+    li
+      ul.row.header
+        li Nombre del Grupo
+        li Invitados
+        //- li Texto Invitacion
+        li e-mail        
+        li añadir a la lista
+    li
+      ul.row.body
+        form#form(name="form")
+          input(type="text", name="_id", value=group._id).hidden
+          li 
+            input(type="text", name="groupName", value=group.groupName)
+            div= group.code
+          li 
+            ul#guests
+              button#addnew add new guest
+              each person in group.list
+                li
+                  input(type="text" placeholder="Nombre Invitado" value=person.guesName)            
+                  input(type="checkbox", name="assist", checked=(person.attend ? "checked" : undefined))
+                  button.js-removeThisGuest remove
+          li
+            input(type="email", name="email" value=group.email)        
+          li
+            input#btnsubmit(type="submit", value="guardar")
+ 
+  script(src="/javascripts/edit.js")  
+
+      
