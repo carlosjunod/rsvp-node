@@ -214,52 +214,6 @@ router.post('/send', (req, res, next)=>{
                   <tr style="padding:0;text-align:left;vertical-align:top">
                     <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
                       <img src="http://bodacarlosyalba.com/wp-content/themes/wedding-theme/images/header_mail.jpg" style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:100%;outline:0;text-decoration:none;width:auto">
-                      <table class="spacer" style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
-                        <tbody>
-                          <tr style="padding:0;text-align:left;vertical-align:top">
-                            <td height="30px" style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:30px;font-weight:400;hyphens:auto;line-height:30px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">&#xA0;</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <table class="row" style="border-collapse:collapse;border-spacing:0;display:table;padding:0;position:relative;text-align:left;vertical-align:top;width:100%">
-                        <tbody>
-                          <tr style="padding:0;text-align:left;vertical-align:top">
-                            <th class="small-12 large-4 columns first" style="Margin:0 auto;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0 auto;padding:0;padding-bottom:16px;padding-left:16px;padding-right:8px;text-align:left;width:177.33px">
-                              <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
-                                <tr style="padding:0;text-align:left;vertical-align:top">
-                                  <th style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left"></th>
-                                </tr>
-                              </table>
-                            </th>
-                            <th class="bg-header small-9 large-9 columns" style="Margin:0 auto;border:1px solid silver;box-shadow:0 5px 50px rgba(0,0,0,.1);color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0 auto;padding:0;padding-bottom:16px;padding-left:8px;padding-right:8px;padding-top:20px;text-align:center;width:419px">
-                              <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
-                                <tr style="padding:0;text-align:left;vertical-align:top">
-                                  <th style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left">
-                                    <center data-parsed="" style="min-width:387px;width:100%">
-                                      <h1 align="center" class="float-center" style="Margin:0;Margin-bottom:10px;border-bottom:2px solid silver;color:inherit;display:inline-block;font-family:serif;font-size:2em;font-weight:700;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:left;word-wrap:normal">Invitación</h1>
-                                      <h2 align="center" class="float-center" style="Margin:0;Margin-bottom:10px;color:inherit;font-family:'Amatic SC',cursive;font-size:30px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:center;word-wrap:normal">${group.groupName}</h2>
-                                    </center>
-                                  </th>
-                                </tr>
-                              </table>
-                            </th>
-                            <th class="small-12 large-4 columns last" style="Margin:0 auto;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0 auto;padding:0;padding-bottom:16px;padding-left:8px;padding-right:16px;text-align:left;width:177.33px">
-                              <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
-                                <tr style="padding:0;text-align:left;vertical-align:top">
-                                  <th style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left"></th>
-                                </tr>
-                              </table>
-                            </th>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <table class="spacer" style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
-                        <tbody>
-                          <tr style="padding:0;text-align:left;vertical-align:top">
-                            <td height="20px" style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:400;hyphens:auto;line-height:20px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">&#xA0;</td>
-                          </tr>
-                        </tbody>
-                      </table>
                       <div id="sub-header" style="text-align:center">
                         <table class="spacer" style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
                           <tbody>
@@ -325,6 +279,45 @@ router.post('/send', (req, res, next)=>{
                           </tbody>
                         </table>
                       </div>
+                      <table class="spacer" style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                        <tbody>
+                          <tr style="padding:0;text-align:left;vertical-align:top">
+                            <td height="15px" style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:15px;font-weight:400;hyphens:auto;line-height:15px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">&#xA0;</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table class="row" style="border-collapse:collapse;border-spacing:0;display:table;padding:0;position:relative;text-align:left;vertical-align:top;width:100%">
+                        <tbody>
+                          <tr style="padding:0;text-align:left;vertical-align:top">
+                            <th class="small-12 large-4 columns first" style="Margin:0 auto;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0 auto;padding:0;padding-bottom:16px;padding-left:16px;padding-right:8px;text-align:left;width:177.33px">
+                              <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                <tr style="padding:0;text-align:left;vertical-align:top">
+                                  <th style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left"></th>
+                                </tr>
+                              </table>
+                            </th>
+                            <th class="bg-header small-9 large-9 columns" style="Margin:0 auto;border:1px solid silver;box-shadow:0 5px 50px rgba(0,0,0,.1);color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0 auto;padding:0;padding-bottom:16px;padding-left:8px;padding-right:8px;padding-top:20px;text-align:center;width:419px">
+                              <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                <tr style="padding:0;text-align:left;vertical-align:top">
+                                  <th style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left">
+                                    <center data-parsed="" style="min-width:387px;width:100%">
+                                      <h1 align="center" class="float-center" style="Margin:0;Margin-bottom:10px;border-bottom:2px solid silver;color:inherit;display:inline-block;font-family:serif;font-size:2em;font-weight:700;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:left;word-wrap:normal">Invitación</h1>
+                                      <h2 align="center" class="float-center" style="Margin:0;Margin-bottom:10px;color:inherit;font-family:'Amatic SC',cursive;font-size:30px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:center;word-wrap:normal">${group.groupName}</h2>
+                                    </center>
+                                  </th>
+                                </tr>
+                              </table>
+                            </th>
+                            <th class="small-12 large-4 columns last" style="Margin:0 auto;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0 auto;padding:0;padding-bottom:16px;padding-left:8px;padding-right:16px;text-align:left;width:177.33px">
+                              <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                <tr style="padding:0;text-align:left;vertical-align:top">
+                                  <th style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left"></th>
+                                </tr>
+                              </table>
+                            </th>
+                          </tr>
+                        </tbody>
+                      </table>
                       <table class="spacer" style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
                         <tbody>
                           <tr style="padding:0;text-align:left;vertical-align:top">
