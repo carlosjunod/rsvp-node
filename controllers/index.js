@@ -213,7 +213,7 @@ router.post('/send', (req, res, next)=>{
                 <tbody>
                   <tr style="padding:0;text-align:left;vertical-align:top">
                     <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
-                      <img src="http://bodacarlosyalba.com/wp-content/themes/wedding-theme/images/header_mail.jpg" style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:100%;outline:0;text-decoration:none;width:auto">
+                      <img src="http://bodacarlosyalba.com/wp-content/themes/wedding-theme/images/header_email.png" style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:100%;outline:0;text-decoration:none;width:auto">
                       <div id="sub-header" style="text-align:center">
                         <table class="spacer" style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
                           <tbody>
@@ -229,7 +229,7 @@ router.post('/send', (req, res, next)=>{
                                 <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
                                   <tr style="padding:0;text-align:left;vertical-align:top">
                                     <th style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left">
-                                      <p class="text-left" style="Margin:0;Margin-bottom:10px;color:#4F4F4F;font-family:Helvetica,Arial,sans-serif;font-size:13px;font-weight:400;line-height:1em;margin:0!important;margin-bottom:10px;padding:0;text-align:left">Raúl Bahamón Ardila
+                                      <p class="text-left" style="Margin:0;Margin-bottom:10px;color:#4F4F4F;font-family:Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.1em;margin:0!important;margin-bottom:10px;padding:0;text-align:left">Raúl Bahamón Ardila
                                         <br>Lucero Rodríguez Crespo</p>
                                     </th>
                                   </tr>
@@ -246,8 +246,11 @@ router.post('/send', (req, res, next)=>{
                                 <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
                                   <tr style="padding:0;text-align:left;vertical-align:top">
                                     <th style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left">
-                                      <p class="text-right" style="Margin:0;Margin-bottom:10px;color:#4F4F4F;font-family:Helvetica,Arial,sans-serif;font-size:13px;font-weight:400;line-height:1em;margin:0!important;margin-bottom:10px;padding:0;text-align:right">✝ Ingrid Alcaino Travieso
-                                        <br>✝ Washington Junod Pacheco</p>
+                                      <p class="text-right" style="Margin:0;Margin-bottom:10px;color:#4F4F4F;font-family:Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.1em;margin:0!important;margin-bottom:10px;padding:0;text-align:right">
+                                        <span class="sutil" style="color:silver;font-size:12px">✝</span> Ingrid Alcaino Travieso
+                                        <br>
+                                        <span class="sutil" style="color:silver;font-size:12px">✝</span> Washington Junod Pacheco
+                                        <br>Ingrid Junod Alcaino</p>
                                     </th>
                                   </tr>
                                 </table>
@@ -262,7 +265,7 @@ router.post('/send', (req, res, next)=>{
                                 <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
                                   <tr style="padding:0;text-align:left;vertical-align:top">
                                     <th style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left">
-                                      <p class="text-center" style="Margin:0;Margin-bottom:10px;color:#4F4F4F;font-family:Helvetica,Arial,sans-serif;font-size:13px;font-weight:400;line-height:1em;margin:0!important;margin-bottom:10px;padding:0;text-align:center">Tienen el placer de invitar al matrimonio de sus hijos</p>
+                                      <p class="text-center" style="Margin:0;Margin-bottom:10px;color:#4F4F4F;font-family:Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.1em;margin:0!important;margin-bottom:10px;padding:0;text-align:center">Tienen el placer de invitar al matrimonio de sus amados a</p>
                                     </th>
                                     <th class="expander" style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0!important;text-align:left;visibility:hidden;width:0"></th>
                                   </tr>
@@ -301,7 +304,6 @@ router.post('/send', (req, res, next)=>{
                                 <tr style="padding:0;text-align:left;vertical-align:top">
                                   <th style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left">
                                     <center data-parsed="" style="min-width:387px;width:100%">
-                                      <h1 align="center" class="float-center" style="Margin:0;Margin-bottom:10px;border-bottom:2px solid silver;color:inherit;display:inline-block;font-family:serif;font-size:2em;font-weight:700;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:left;word-wrap:normal">Invitación</h1>
                                       <h2 align="center" class="float-center" style="Margin:0;Margin-bottom:10px;color:inherit;font-family:'Amatic SC',cursive;font-size:30px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:center;word-wrap:normal">${group.groupName}</h2>
                                     </center>
                                   </th>
@@ -333,102 +335,106 @@ router.post('/send', (req, res, next)=>{
                                 <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
                                   <tr style="padding:0;text-align:left;vertical-align:top">
                                     <th style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left">
-                                      <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:left">Tenemos el agrado de invitarte a nuestra boda que se realizará en la ciudad de Cali, Colombia
-                                        el día 19 de marzo del 2018. para tener mas información y confirmar tu asistencia rogamos
-                                        visitar la página de nuestra boda</p>
-                                      <table class="spacer" style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                      <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:left">El matrimonio que se realizará en la
+                                        <br>ciudad de Cali,Colombia el día 19 de marzo del 2018. Para tener mas
+                                        <br>información y confirmar tu asistencia rogamos visitar la página de la boda.</p>
+                                      <table
+                                        class="spacer" style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
                                         <tbody>
                                           <tr style="padding:0;text-align:left;vertical-align:top">
                                             <td height="16px" style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:16px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">&#xA0;</td>
                                           </tr>
                                         </tbody>
-                                      </table>
-                                      <ul>${liNames}</ul>
-                                      <table class="spacer" style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
-                                        <tbody>
-                                          <tr style="padding:0;text-align:left;vertical-align:top">
-                                            <td height="16px" style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:16px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">&#xA0;</td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
-                                      <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:left">
-                                        <em>Para confirmar tu asistancia ingresa a
-                                          <a href="http://www.bodacarlosyalba.com" style="Margin:0;color:#2199e8;font-family:Helvetica,Arial,sans-serif;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left;text-decoration:none">www.bodacarlosyalba.com</a> e ingresa el siguiente codigo:</em>
-                                      </p>
-                                      <table class="spacer" style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
-                                        <tbody>
-                                          <tr style="padding:0;text-align:left;vertical-align:top">
-                                            <td height="12px" style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:12px;font-weight:400;hyphens:auto;line-height:12px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">&#xA0;</td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
-                                      <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:left">
-                                        <span class="code" style="background-color:#F6CB7E;border-radius:5px;padding:10px">${group.code}</span>
-                                      </p>
-                                    </th>
-                                  </tr>
                                 </table>
-                              </th>
-                              <th class="small-12 large-6 columns last" style="Margin:0 auto;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0 auto;padding:0;padding-bottom:16px;padding-left:8px;padding-right:16px;text-align:left;width:274px">
-                                <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
-                                  <tr style="padding:0;text-align:left;vertical-align:top">
-                                    <th style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left">
-                                      <img src="http://bodacarlosyalba.com/wp-content/themes/wedding-theme/images/albita-y-carlos.gif"
-                                        style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:100%;outline:0;text-decoration:none;width:auto">
-                                    </th>
-                                  </tr>
+                                <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:left">
+                                  <em>Esta Invitacion es valida para:</em>
+                                </p>
+                                <ul>${liNames}</ul>
+                                <table class="spacer" style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                  <tbody>
+                                    <tr style="padding:0;text-align:left;vertical-align:top">
+                                      <td height="16px" style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:16px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">&#xA0;</td>
+                                    </tr>
+                                  </tbody>
                                 </table>
-                              </th>
-                            </tr>
-                          </tbody>
+                                <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:left">
+                                  <em>Para confirmar tu asistencia ingresa a
+                                    <a href="http://www.bodacarlosyalba.com" style="Margin:0;color:#2199e8;font-family:Helvetica,Arial,sans-serif;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left;text-decoration:none">www.bodacarlosyalba.com</a> y coloca el siguiente código:</em>
+                                </p>
+                                <table class="spacer" style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                  <tbody>
+                                    <tr style="padding:0;text-align:left;vertical-align:top">
+                                      <td height="12px" style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:12px;font-weight:400;hyphens:auto;line-height:12px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">&#xA0;</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:left">
+                                  <span class="code" style="background-color:#F6CB7E;border-radius:5px;padding:10px">${group.code}</span>
+                                </p>
+                                </th>
+                                </tr>
                         </table>
-                        <table class="spacer" style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
-                          <tbody>
+                        </th>
+                        <th class="small-12 large-6 columns last" style="Margin:0 auto;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0 auto;padding:0;padding-bottom:16px;padding-left:8px;padding-right:16px;text-align:left;width:274px">
+                          <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
                             <tr style="padding:0;text-align:left;vertical-align:top">
-                              <td height="16px" style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:16px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">&#xA0;</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        <table class="row" style="border-collapse:collapse;border-spacing:0;display:table;padding:0;position:relative;text-align:left;vertical-align:top;width:100%">
-                          <tbody>
-                            <tr style="padding:0;text-align:left;vertical-align:top">
-                              <th class="small-12 large-12 columns first" style="Margin:0 auto;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0 auto;padding:0;padding-bottom:16px;padding-left:16px;padding-right:8px;text-align:left;width:564px">
-                                <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
-                                  <tr style="padding:0;text-align:left;vertical-align:top">
-                                    <th style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left">
-                                      <p class="fecha" style="Margin:0;Margin-bottom:10px;background-color:#FF5370;color:#fff;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:10px;text-align:left;text-decoration:underline">por favor confirmar
-                                        <strong>antes del 20 de diciembre</strong>
-                                      </p>
-                                    </th>
-                                    <th class="expander" style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0!important;text-align:left;visibility:hidden;width:0"></th>
-                                  </tr>
-                                </table>
-                              </th>
-                              <th class="small-12 large-12 columns last" style="Margin:0 auto;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0 auto;padding:0;padding-bottom:16px;padding-left:8px;padding-right:16px;text-align:left;width:564px">
-                                <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
-                                  <tr style="padding:0;text-align:left;vertical-align:top">
-                                    <th style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left">
-                                      <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:left">
-                                        <small style="color:#cacaca;font-size:80%">Si tienes algún problema para hacer tu reservación porfavor escríbenos
-                                          <a href="mailto:junodbahamon@gmail.com"
-                                            style="Margin:0;color:#2199e8;font-family:Helvetica,Arial,sans-serif;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left;text-decoration:none">aquí</a> y con gusto te ayudaremos</small>
-                                      </p>
-                                    </th>
-                                    <th class="expander" style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0!important;text-align:left;visibility:hidden;width:0"></th>
-                                  </tr>
-                                </table>
+                              <th style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left">
+                                <img src="http://bodacarlosyalba.com/wp-content/themes/wedding-theme/images/albita-y-carlos.gif"
+                                  style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:100%;outline:0;text-decoration:none;width:auto">
                               </th>
                             </tr>
-                          </tbody>
-                        </table>
-                      </column>
-                    </td>
+                          </table>
+                        </th>
+                        </tr>
+                        </tbody>
+              </table>
+              <table class="spacer" style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                <tbody>
+                  <tr style="padding:0;text-align:left;vertical-align:top">
+                    <td height="16px" style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:16px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">&#xA0;</td>
                   </tr>
                 </tbody>
               </table>
-            </center>
-          </td>
-        </tr>
+              <table class="row" style="border-collapse:collapse;border-spacing:0;display:table;padding:0;position:relative;text-align:left;vertical-align:top;width:100%">
+                <tbody>
+                  <tr style="padding:0;text-align:left;vertical-align:top">
+                    <th class="small-12 large-12 columns first" style="Margin:0 auto;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0 auto;padding:0;padding-bottom:16px;padding-left:16px;padding-right:8px;text-align:left;width:564px">
+                      <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                        <tr style="padding:0;text-align:left;vertical-align:top">
+                          <th style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left">
+                            <p class="fecha" style="Margin:0;Margin-bottom:10px;background-color:#FF5370;color:#fff;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:10px;text-align:left;text-decoration:underline">Por favor confirmar
+                              <strong>antes del 20 de diciembre</strong>
+                            </p>
+                          </th>
+                          <th class="expander" style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0!important;text-align:left;visibility:hidden;width:0"></th>
+                        </tr>
+                      </table>
+                    </th>
+                    <th class="small-12 large-12 columns last" style="Margin:0 auto;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0 auto;padding:0;padding-bottom:16px;padding-left:8px;padding-right:16px;text-align:left;width:564px">
+                      <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                        <tr style="padding:0;text-align:left;vertical-align:top">
+                          <th style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left">
+                            <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:left">
+                              <small style="color:#cacaca;font-size:80%">Si tienes algún problema para hacer tu reservación porfavor escríbenos
+                                <a href="mailto:junodbahamon@gmail.com"
+                                  style="Margin:0;color:#2199e8;font-family:Helvetica,Arial,sans-serif;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left;text-decoration:none">aquí</a> y con gusto te ayudaremos</small>
+                            </p>
+                          </th>
+                          <th class="expander" style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0!important;text-align:left;visibility:hidden;width:0"></th>
+                        </tr>
+                      </table>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+              </column>
+              </td>
+              </tr>
+              </tbody>
+      </table>
+      </center>
+      </td>
+      </tr>
       </table>
       <!-- prevent Gmail on iOS font size manipulation -->
       <div style="display:none;white-space:nowrap;font:15px courier;line-height:0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
