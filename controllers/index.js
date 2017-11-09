@@ -117,7 +117,8 @@ router.post('/send', (req, res, next)=>{
     });
 
 
-    let html = `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    let html = `
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
     <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" style="background-image:url(http://www.bodacarlosyalba.com/wp-content/themes/wedding-theme/images/pattern-boda.jpg)!important">
     
     <head>
@@ -347,7 +348,7 @@ router.post('/send', (req, res, next)=>{
                                         </tbody>
                                 </table>
                                 <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:left">
-                                  <em>Esta Invitacion es valida para:</em>
+                                  <em>Esta invitación es válida para:</em>
                                 </p>
                                 <ul>${liNames}</ul>
                                 <table class="spacer" style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">

@@ -101,9 +101,9 @@ const sendEmail = (id) => {
     body: JSON.stringify({id})
   }).then(response => {
     console.log('response', response)
-    // window.location.reload()
+    window.location.reload()
     console.log('HERE!!!!!!!!!!!')
-    displayMsg('Mensaje Enviado', 'success')      
+    // displayMsg('Mensaje Enviado', 'success')      
   }).catch(err => {
     console.log('err', err)
   })
