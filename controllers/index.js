@@ -213,11 +213,19 @@ router.post('/send', (req, res, next)=>{
                 <tbody>
                   <tr style="padding:0;text-align:left;vertical-align:top">
                     <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
-                      <div id="sub-header" style="background-color:#4F4F4F;text-align:center">
+                      <img src="http://bodacarlosyalba.com/wp-content/themes/wedding-theme/images/header_mail.jpg" style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:100%;outline:0;text-decoration:none;width:auto">
+                      <table class="spacer" style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                        <tbody>
+                          <tr style="padding:0;text-align:left;vertical-align:top">
+                            <td height="10px" style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:10px;font-weight:400;hyphens:auto;line-height:10px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">&#xA0;</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div id="sub-header" style="text-align:center">
                         <table class="spacer" style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
                           <tbody>
                             <tr style="padding:0;text-align:left;vertical-align:top">
-                              <td height="10px" style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:10px;font-weight:400;hyphens:auto;line-height:10px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">&#xA0;</td>
+                              <td height="15px" style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:15px;font-weight:400;hyphens:auto;line-height:15px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">&#xA0;</td>
                             </tr>
                           </tbody>
                         </table>
@@ -228,8 +236,8 @@ router.post('/send', (req, res, next)=>{
                                 <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
                                   <tr style="padding:0;text-align:left;vertical-align:top">
                                     <th style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left">
-                                      <p class="text-center" style="Margin:0;Margin-bottom:10px;color:#fff;font-family:Helvetica,Arial,sans-serif;font-size:12px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:center">Raúl Bahamón Ardila</p>
-                                      <p class="text-center" style="Margin:0;Margin-bottom:10px;color:#fff;font-family:Helvetica,Arial,sans-serif;font-size:12px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:center">Lucero Rodríguez Crespo</p>
+                                      <p class="text-center" style="Margin:0;Margin-bottom:10px;color:#4F4F4F;font-family:Helvetica,Arial,sans-serif;font-size:12px;font-weight:400;line-height:1em;margin:0!important;margin-bottom:10px;padding:0;text-align:center">Raúl Bahamón Ardila
+                                        <br>Lucero Rodríguez Crespo</p>
                                     </th>
                                   </tr>
                                 </table>
@@ -245,8 +253,8 @@ router.post('/send', (req, res, next)=>{
                                 <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
                                   <tr style="padding:0;text-align:left;vertical-align:top">
                                     <th style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left">
-                                      <p class="text-center" style="Margin:0;Margin-bottom:10px;color:#fff;font-family:Helvetica,Arial,sans-serif;font-size:12px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:center">✞ Ingrid Alcaino Travieso</p>
-                                      <p class="text-center" style="Margin:0;Margin-bottom:10px;color:#fff;font-family:Helvetica,Arial,sans-serif;font-size:12px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:center">✞ Washington Junod Pacheco</p>
+                                      <p class="text-center" style="Margin:0;Margin-bottom:10px;color:#4F4F4F;font-family:Helvetica,Arial,sans-serif;font-size:12px;font-weight:400;line-height:1em;margin:0!important;margin-bottom:10px;padding:0;text-align:center">✝ Ingrid Alcaino Travieso
+                                        <br>✝ Washington Junod Pacheco</p>
                                     </th>
                                   </tr>
                                 </table>
@@ -261,7 +269,7 @@ router.post('/send', (req, res, next)=>{
                                 <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
                                   <tr style="padding:0;text-align:left;vertical-align:top">
                                     <th style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left">
-                                      <p class="text-center" style="Margin:0;Margin-bottom:10px;color:#fff;font-family:Helvetica,Arial,sans-serif;font-size:12px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:center">Tienen el placer de invitar al matrimonio de sus amados</p>
+                                      <p class="text-center" style="Margin:0;Margin-bottom:10px;color:#4F4F4F;font-family:Helvetica,Arial,sans-serif;font-size:12px;font-weight:400;line-height:1em;margin:0!important;margin-bottom:10px;padding:0;text-align:center">Tienen el placer de invitar al matrimonio de sus hijos</p>
                                     </th>
                                     <th class="expander" style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0!important;text-align:left;visibility:hidden;width:0"></th>
                                   </tr>
@@ -270,8 +278,21 @@ router.post('/send', (req, res, next)=>{
                             </tr>
                           </tbody>
                         </table>
+                        <table class="spacer" style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                          <tbody>
+                            <tr style="padding:0;text-align:left;vertical-align:top">
+                              <td height="5px" style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:5px;font-weight:400;hyphens:auto;line-height:5px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">&#xA0;</td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
-                      <img src="http://bodacarlosyalba.com/wp-content/themes/wedding-theme/images/header_mail.jpg" style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:100%;outline:0;text-decoration:none;width:auto">
+                      <table class="spacer" style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                        <tbody>
+                          <tr style="padding:0;text-align:left;vertical-align:top">
+                            <td height="30px" style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:30px;font-weight:400;hyphens:auto;line-height:30px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">&#xA0;</td>
+                          </tr>
+                        </tbody>
+                      </table>
                       <table class="row" style="border-collapse:collapse;border-spacing:0;display:table;padding:0;position:relative;text-align:left;vertical-align:top;width:100%">
                         <tbody>
                           <tr style="padding:0;text-align:left;vertical-align:top">
@@ -307,7 +328,7 @@ router.post('/send', (req, res, next)=>{
                       <table class="spacer" style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
                         <tbody>
                           <tr style="padding:0;text-align:left;vertical-align:top">
-                            <td height="50px" style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:50px;font-weight:400;hyphens:auto;line-height:50px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">&#xA0;</td>
+                            <td height="40px" style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:40px;font-weight:400;hyphens:auto;line-height:40px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">&#xA0;</td>
                           </tr>
                         </tbody>
                       </table>
