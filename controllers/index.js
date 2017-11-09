@@ -261,7 +261,7 @@ router.post('/send', (req, res, next)=>{
                                 <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
                                   <tr style="padding:0;text-align:left;vertical-align:top">
                                     <th style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left">
-                                      <p class="text-center" style="Margin:0;Margin-bottom:10px;color:#fff;font-family:Helvetica,Arial,sans-serif;font-size:12px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:center">Raúl Bahamón Ardila</p>
+                                      <p class="text-center" style="Margin:0;Margin-bottom:10px;color:#fff;font-family:Helvetica,Arial,sans-serif;font-size:12px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:center">Tienen el placer de invitar al matrimonio de sus amados</p>
                                     </th>
                                     <th class="expander" style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0!important;text-align:left;visibility:hidden;width:0"></th>
                                   </tr>
@@ -414,12 +414,12 @@ router.post('/send', (req, res, next)=>{
           </td>
         </tr>
       </table>
+      <!-- prevent Gmail on iOS font size manipulation -->
       <div style="display:none;white-space:nowrap;font:15px courier;line-height:0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
     </body>
     
-    </html>
-    `
+    </html>`
 
     var mailOption = {
       from: process.env.GMAIL_AUTH_USER,
