@@ -12,7 +12,11 @@ const GuestGroupList = require('../models/Guest')
 router.get('/rsvp', function(req, res, next) {
   
   GuestGroupList.find((err, groups)=>{
-    if (err) res.render('index', { title: 'Añadir a la lista' });  
+    if (err) res.render('index', { title: 'ERROR' }); 
+
+    let totalGuests
+
+
     res.render('index', { title: 'Añadir a la lista', groups})
   })
 });
@@ -90,8 +94,6 @@ router.put('/edit/:id', (req,res,next)=>{
     res.render('edit', { title: 'Edicion', group})    
   })
 })
-
-
 
 router.post('/send', (req, res, next)=>{
   
@@ -404,7 +406,7 @@ router.post('/send', (req, res, next)=>{
                         <tr style="padding:0;text-align:left;vertical-align:top">
                           <th style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left">
                             <p class="fecha" style="Margin:0;Margin-bottom:10px;background-color:#FF5370;color:#fff;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:10px;text-align:left;text-decoration:underline">Por favor confirmar
-                              <strong>antes del 20 de diciembre</strong>
+                              <strong>antes del 4 de febrero</strong>
                             </p>
                           </th>
                           <th class="expander" style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0!important;text-align:left;visibility:hidden;width:0"></th>
